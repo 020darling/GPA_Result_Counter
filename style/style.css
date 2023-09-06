@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(54, 159, 173);
+  color: black;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body section.animation {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+body section.animation section.ani {
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.animation section.ani .ph {
+  width: 100%;
+  height: 0;
+}
+body section.animation section.ani .ph img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.animation .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(144, 144, 144), lightgreen);
+  z-index: -1;
+}
+body header nav {
+  box-shadow: 0 8px 6px -6px black;
+  background-color: rgb(119, 119, 199);
+}
+body header nav ul {
+  display: flex;
+}
+body header nav ul li {
+  padding: 1rem;
+}
+body header nav ul li a {
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
+}
+body header nav ul li a:hover {
+  color: lightcoral;
+}
+body main section.mainp {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+body main section.mainp h1 {
+  font-size: 3rem;
+}
+body main section.mainp p {
+  font-size: 1.15rem;
+}
+body main section.mainp div.ip form input,
+body main section.mainp div.ip form select {
+  font-size: 1.05rem;
+  padding: 0.5rem;
+  border: 0.25px solid rgb(39, 39, 21);
+  margin: 0.35rem;
+  border-radius: 0.25rem;
+}
+body main section.mainp div.ip form button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+body main section.mainp div.ip form button i {
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+body main section.mainp button.pb {
+  margin: 3rem 0rem;
+  border: none;
+  background-color: transparent;
+}
+body main section.mainp button.pb i {
+  font-size: 3rem;
+  pointer-events: none;
+}
+body main section.mainp div.final {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: bc 8s infinite;
+  margin-bottom: 150px;
+}
+body main section.mainp div.final p {
+  margin-top: 15px;
+}
+body main section.mainp div.final h1.mark {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+body main footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 5vh;
+  z-index: 10;
+  background-color: rgb(119, 119, 199);
+}
+body main footer h1 {
+  text-align: center;
+  line-height: 5vh;
+  color: white;
+  font-weight: 100;
+}
+
+@keyframes su {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes sd {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes bc {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: lightgreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}
+.removes {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}/*# sourceMappingURL=style.css.map */
